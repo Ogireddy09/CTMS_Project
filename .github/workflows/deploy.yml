@@ -23,7 +23,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ secrets.AWS_REGION }}
+        
 
     - name: Terraform Init
       run: terraform init -backend-config="bucket=${{ secrets.my-terraform-state-bucket-312025}}" -backend-config="key=state-file" -backend-config="region=${{ secrets.us-east-1 }}""
