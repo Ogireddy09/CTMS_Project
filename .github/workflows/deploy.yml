@@ -30,7 +30,7 @@ jobs:
 
     - name: Terraform Init
       run: terraform init \
-             -backend-config="bucket=${{ secrets.my-terraform-state-bucket-312025}}" \
+             -backend-config="bucket=my-terraform-state-bucket-312025" \
              -backend-config="key=state-file" \
              -backend-config="region=us-east-1"
 
